@@ -5,28 +5,33 @@ import java.util.Scanner;
 public class EvenOddCountArray {
 
 	public static void main(String[] args) {
-	    int even=0,odd=0;
-	    Scanner scan=new Scanner(System.in);
-	    //create a scanner object for input
-	    System.out.print("Enter the array size :\n");
-	    int size=scan.nextInt();//reads input from user for array size
-	    System.out.print("Enter the elements of the array :\n");
-	    int arr[]=new int[size];
-	    for(int i=0; i<arr.length; i++){
-	       System.out.printf("Enter the element arr[%d]:",i);
-	            arr[i]=scan.nextInt();//reads input from user for array elements
-	        }
-	        for(int i=0; i<size; i++){
-	            if(arr[i]%2==0){
-	                even++;
-	         
-	            }
-	            else{
-	                odd++;
-	        }
-	    }
-	    System.out.println("Total even numbers of an array: "+even);//display even numbers
-	    System.out.println("Total odd numbers of an array: "+odd);//display odd numbers
-	    }
+		  int even=0,odd=0;
+		  Scanner scan=new Scanner(System.in);
+		  
+		  System.out.print("Enter the array size :\n");
+		  int size=scan.nextInt();
+		  System.out.print("Enter the elements of the array :\n");
+		  int arr[]=new int[size];
+		  int i=0;
+		  do{
+		     System.out.printf("Enter the element arr[%d]:",i);
+		          arr[i]=scan.nextInt();
+		           i++;
+		      }while( i<arr.length);
+		      
+		      i=0; 
+		      do{
+		          if(arr[i]%2==0){
+		              even++;
+		       
+		          }
+		          else{
+		              odd++;
+		      }
+		       i++;
+		  }while(i<size);
+		  System.out.println("Total even numbers of ann array: "+even);
+		  System.out.println("Total odd numbers of ann array: "+odd);
+	}
 
 }
