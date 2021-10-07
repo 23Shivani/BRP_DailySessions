@@ -30,8 +30,7 @@ public class EvenOddCountArray {
 		      }
 		       i++;
 		  }while(i<size);
-		  System.out.println("Total even numbers of ann array: "+even);
-		  System.out.println("Total odd numbers of ann array: "+odd);
+		  System.out.println("Total even numbers of an array: "+even);
+		  System.out.println("Total odd numbers of an array: "+odd);
 	}
-
 }
